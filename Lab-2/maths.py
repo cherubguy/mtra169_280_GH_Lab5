@@ -5,6 +5,9 @@ def _add(first, second, base):
     num = first + second
     return convert_base(num, base)
 
+def factorial(number):
+    return 0
+
 def fibonacci(length):
     def internal(first, second, count):
         third = add(first, second)

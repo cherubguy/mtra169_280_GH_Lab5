@@ -93,6 +93,11 @@ class MathsTest(unittest.TestCase):
         
         #Assert
         self.assertEqual(tc.text, "[WARNING] This is some text")
+    
+    def test_factorial(self):
+        expected = 120
+        result = maths.factorial(5)
+        self.assertEqual(result, expected)
         
     
 # This allows running the unit tests from the command line (python test_maths.py)
