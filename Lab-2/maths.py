@@ -6,7 +6,15 @@ def _add(first, second, base):
     return convert_base(num, base)
 
 def factorial(number):
-    return 0
+    result = 1
+    
+    for i in range(1, number + 1):
+        
+        result *= i
+        print(result)
+    
+          
+    return result
 
 def fibonacci(length):
     def internal(first, second, count):
